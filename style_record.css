@@ -1,0 +1,141 @@
+body{
+    margin: 0;                                  /*отступы от элементов*/
+    padding: 0;                                 /*отступы от элементов для содержимого*/
+    font-family: Arial, serif;                  /*Шрифт, тип шрифта*/
+    font-size: 14px;                            /*Размеры текста*/
+    line-height: 20px;                          /*Отступы сток*/
+    color:white;                              /*Цвет текста*/
+    background-color: #0078f1;
+    
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1920px;
+}
+
+header{
+    
+    background: linear-gradient(0deg, #0078f1,#2f39c2);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 120px;
+    
+}
+
+h1 {
+    width: 280px;
+    height: 35px;
+    margin: -90px 0 0 150px;                    /*auto - браузер сам считает отступ*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    text-align: left;                           /*расположение текста*/
+    font-weight:800;                        /*насыщенность шрифта*/
+    font-size: 22px;                 
+    line-height: 32px;   
+    color:#1f1f1e;  
+}
+
+#logo_link{
+    
+    border-radius: 90px;
+    padding: 100px 1px 1px 1px;
+    position: relative;
+    left: 0px;
+}
+
+#logo{
+    margin: 10px 1px 1px 25px;
+    box-shadow: 5px 5px black;
+    border-radius: 100px;
+    
+}
+
+#logo:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+/*------------------------------------------------------------------------------*/
+                        /*^ логотип*/
+/*------------------------------------------------------------------------------*/
+
+hr{
+    position: relative;
+    bottom: -45%;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 44px;
+    position: relative;
+    text-align: center;
+    bottom: -35%;
+    color: #1e1e1f;
+}
+
+
+
+
+main{
+    margin: 50px 0 0 0;
+    background: linear-gradient(0deg, #00d7f3,#00aafd,#0078f1);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+table{
+    margin: 10px 30px 0 0;
+    border: black solid;
+    display: inline-block;
+    background-color: black;
+}
+
+.divTable{
+    text-align: center;
+    margin: 70px 0 30px 0;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid orange;
+}
+
+th{
+    padding: 10px;
+    border: 2px solid orange;
+}
+
+#record{
+    text-align: right;
+    font-size: 20px;
+    margin: 0 0 0 620px;
+    width: 590px;
+    position: relative;
+    
+}
+
+
+#inputTimeRecord, #inputNumWashCar{
+    width: 95px;
+    height: 43px;
+    font-size: 20px;
+    
+}
+
+#inputNameStudent{
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+}
+
+#myButton{
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    border-radius: 8px;
+}
+
+footer{
+    height: 200px;
+    background: linear-gradient(0deg, #55ffe7,#00d7f3);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin:-20px 0 0 0;
+}
+
