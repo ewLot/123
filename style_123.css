@@ -1,0 +1,351 @@
+body{
+    margin: 0;                                  /*отступы от элементов*/
+    padding: 0;                                 /*отступы от элементов для содержимого*/
+    font-family: Arial, serif;                  /*Шрифт, тип шрифта*/
+    font-size: 14px;                            /*Размеры текста*/
+    line-height: 20px;                          /*Отступы сток*/
+    color:white;                              /*Цвет текста*/
+    background-color: #0078f1;
+    
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1920px;
+    margin-inline: auto;
+}
+
+#palka{
+    position: relative;
+    top: -30px;
+    background-color: #337AB7;
+}
+
+/*------------------------------------------------------------------------------*/
+header{
+   
+    height: 120px;
+    background: linear-gradient(0deg, #0078f1,#2f39c2);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*:#5595c2*/
+}
+
+
+h1{
+    width: 300px;
+    height: 35px;
+    margin: -90px 0 0 150px;                    /*auto - браузер сам считает отступ*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    text-align: left;                           /*расположение текста*/
+    font-weight:800;                        /*насыщенность шрифта*/
+    font-size: 24px;                 
+    line-height: 32px;   
+    color:rgb(0, 0, 0);    
+    
+    /* border: 2px solid black; */
+}
+
+#logo_link{
+    
+    border-radius: 90px;
+    padding: 100px 1px 1px 1px;
+    position: relative;
+    left: 0px;
+}
+
+#logo{
+    margin: 10px 1px 1px 25px;
+    box-shadow: 5px 5px black;
+    border-radius: 100px;
+    
+}
+
+#logo:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+#reg, #log_in {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    background-color: whitesmoke;
+    color:black;
+    width: 110px;                               /*ширина кнопки*/
+    height: 25px;                               /*высота кнопки*/
+    padding: 10px 0 0 8px;                         /*Позиционирование внутри кнопки*/
+    margin: -10px 0 15px 1095px;                     /*Позиционирование на сайте*/
+    border: 2px solid #cccccc;                              /*Настройка границы кнопки*/
+    border-radius: 5px;                         /*Скругление краёв кнопки*/
+    border-color: #000000;                        
+    text-align: left;                           /*Положение текста внутри кнопки*/
+    line-height: 10px;                  
+    font-size: 16px;
+    position: relative;
+    bottom: 40px;
+    float:right;
+    right: 10px;
+    text-decoration: none
+}
+
+#reg:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+
+#log_in:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#infa{
+    font-family:Impact;
+    font-size: 18px;
+    font-weight: 100;
+
+}
+
+main{
+    margin: 40px 0 0 0;
+    background: linear-gradient(0deg, #00d7f3,#00aafd,#0078f1);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*:#5595c2*/                   
+    
+}
+
+
+h2{
+    font-family:Impact;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 8px;
+    position: relative;
+    top: -20px;
+    color: #1e1e1f;
+
+
+}
+
+
+/* Стиль для слидера  */
+.slider{
+    height: 350px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+.slider_button{
+    
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    color: white;
+}
+
+.slider_content{
+    align-self: center;
+    text-align: center;
+    
+}
+
+/* Заголовок слидеров */
+.slider_content > h4{
+    margin-inline: auto;
+    position: relative;
+    
+    font-family: Impact;
+    font-weight: 100;
+    font-size: 24px;
+    color: #1e1e1f;
+}
+
+/* Подзаголовок слидеров */
+h4 ~ h5 {
+    margin-inline: auto;
+    
+    right: 100px;
+    font-family: 'Times New Roman';
+    font-weight: 100;
+    font-size: 18px;
+    color: #1e1e1f;
+}
+
+.back_button, .next_button{
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid black;
+    
+}
+
+/* Конец слидера */
+
+.exit_buttom{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.exit_button:before {
+    content: '+';
+    color: #337AB7;
+    position: absolute;
+    right: 6px;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    
+    transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+/*transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);*/
+
+.exit_button:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: green;
+}
+
+
+
+#WorkTime, #Pay, #Contacts, #win_log_in, #win_reg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#WorkTime:target {
+    z-index: 100;
+    display: block;
+    width: 40%;
+    height: 55%;
+    bottom: -10%;
+}
+
+#Pay:target {
+    z-index: 100;
+    display: block;
+    width: 40%;
+    height: 55%;
+    bottom: -10%;
+}
+
+#Contacts:target {
+    z-index: 100;
+    display: block;
+    width: 40%;
+    height: 45%;
+    bottom: -10%;
+}
+
+#win_log_in:target {
+    z-index: 100;
+    display: block;
+    width: 40%;
+    height: 55%;
+    bottom: -10%;
+}
+
+#win_reg:target {
+    z-index: 100;
+    display: block;
+    width: 40%;
+    height: 55%;
+    bottom: -10%;
+}
+
+.win{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: #000000;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: whitesmoke;
+    
+    
+}
+
+.img_with_link{
+    margin-inline: auto;
+    padding: 10px 0 50px 0;
+    text-align: center;
+
+    
+}
+
+
+.img_href{
+    margin: 0 0 0 40px;
+    position: relative;
+    padding: 0 0 0 0;
+    border-radius: 100px;
+    right: 20px;
+    color:#00aafd;
+}
+
+.img_href > img{
+    border-radius: 20px;
+    margin: 0 0 0 0;
+    position: relative;
+}
+
+.img_href > img:hover{
+    filter: blur(2px);
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.p_main{
+    font-family: Impact;
+    font-weight: 100;
+    font-size: 24px;
+
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+footer{
+    height: 200px;
+    background: linear-gradient(0deg, #55ffe7,#00d7f3);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin:-24px 0 0 0;
+    border: 2px solid black;
+    /*:#5595c2*/
+}
+
+.helper{
+    position: relative;
+
+    
+    font-family: Impact, Haettenschweiler;
+    font-size: 22px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2px;
+    margin-inline: auto;
+    color: rgb(53, 49, 49);
+
+    
+}
+
